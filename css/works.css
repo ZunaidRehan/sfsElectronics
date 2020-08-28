@@ -1,0 +1,53 @@
+body#works .ourServices,
+body#about .aboutUs,
+body#contact .contactUs {
+    margin-top: 100px;
+}
+
+body#works .header,
+body#about .header,
+body#contact .header {
+    top: 0;
+}
+body#works .ourServices {
+    margin-top: 100px;
+}
+#works .serviceRow {
+    margin:30px 0;
+}
+body#about .aboutUs {
+    padding-bottom: 50px;
+    background: #fff;
+}
+.ourTeam {
+    margin-top: 90px;
+}
+.map iframe {
+    width: 100%;
+}
+img.profileImg {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 2px solid #428e8f;
+}
+
+.profileBlock {
+    text-align: center;
+}
+.profileBlock h6 {
+    margin-top: 10px;
+}
+.profileBlock {
+    width: 25%;
+    padding:15px;
+}
+
+@media(max-width:992px){
+    .profileBlock {
+
+        width: 100%;
+        margin: 40px 0;
+    }
+}
