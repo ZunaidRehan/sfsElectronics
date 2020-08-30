@@ -13,8 +13,11 @@
     <link href="css/mystyle.css" rel="stylesheet" media="screen">
     <link href="css/works.css" rel="stylesheet" media="screen">
     <link href="css/master.css" rel="stylesheet" media="screen">
-    <script type="text/javascript" src="js/myJs.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
         $(document).ready(function () {
 
@@ -46,10 +49,7 @@
             document.getElementById("myBar").style.width = scrolled + "%";
         }
     </script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </head>
 
 <body id="works">
@@ -59,10 +59,13 @@
             <div class="progress-bar" id="myBar"></div>
         </div>
         <div class="logoSection">
-            <div class="logo">SFS Electronics</div>
+            <!-- <div class="logo">SFS Electronics</div> -->
+            <a href="http://sfselectronics.com/">
+                <img class="logo" data-aos="zoom-in" src="./images/logo.png" alt="SFS Electronics">
+            </a>
         </div>
         <div class="mobile menuToggle"><span></span><span></span><span></span></div>
-        <div class="col col-sm-6 menu">
+        <div class="col col-sm-6 menu" data-aos="fade-down">
             <li><a href="index"> Home</a></li>
             <li><a href="works"> Our Works</a></li>
             <li><a href="about"> About Us</a></li>
@@ -75,26 +78,26 @@
             <h1 class="heading"><span>What We Do ?</span></h1>
             <div class="col-sm-12 col-centered contentWrapper">
                 <div class="serviceRow">
-                    <div class="circleBlock block1">
+                    <div class="circleBlock block1" data-aos="fade-right">
                         <p>Repairing of All AC/DC Power Supplies<br>
                             (Industrial, Medical, UPS and SMPS)
                         </p>
                     </div>
-                    <div class="circleBlock block2">
+                    <div class="circleBlock block2" data-aos="fade-down">
                         <p>Repairing of AC/DC Drives all make (VFD)</p>
                     </div>
-                    <div class="circleBlock block3">
+                    <div class="circleBlock block3" data-aos="fade-left">
                         <p>Repairing of Medical PCB(X-Ray , MRI , Ultra Sound)</p>
                     </div>
                 </div>
                 <div class="serviceRow">
-                    <div class="circleBlock block4">
+                    <div class="circleBlock block4" data-aos="fade-right">
                         <p>Repairing of All Medical Equipments</p>
                     </div>
-                    <div class="circleBlock block5">
+                    <div class="circleBlock block5" data-aos="fade-up">
                         <p>Repairing of Printing Press PCB</p>
                     </div>
-                    <div class="circleBlock block6">
+                    <div class="circleBlock block6" data-aos="fade-left">
                         <p>Repairing of PLC & PLC Panel and HMI</p>
                     </div>
                 </div>
@@ -118,9 +121,13 @@
         </div>
     </div>
 
-
+    <!-- ======================= Scripts ====================== -->
 
     <script type="text/javascript" src="./js/myJS.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

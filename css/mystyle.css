@@ -5,9 +5,13 @@
 } */
 
 .carousel-caption {
-    background: rgb(0 0 0 / 0.3);
+    background: rgb(0 0 0 / 0.6);
 }
-
+ul.carousel-indicators {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+}
 div#slider img {
     margin: 0 auto;
     display: flex;
@@ -34,13 +38,14 @@ div#slider img {
 }
 
 .header {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     position: absolute;
     left: 0;
     right: 0;
     z-index: 10000;
-    background: rgb(0 0 0 / 0.7);
+        background: rgb(204 204 204 / 0.9);
+        
 }
 
 i.fa.fa-arrow-right {
@@ -61,7 +66,7 @@ div.col-centered {
     float: right;
     display: flex;
     justify-content: space-around;
-    margin-top: 7px;
+    margin-top: 17px;
 }
 
 .logoSection {
@@ -74,7 +79,7 @@ div.col-centered {
 }
 
 .header .menu li a {
-    color: #4bd4d4;
+    color: #000;
     font-weight: bold;
     padding: 5px;
 }
@@ -113,19 +118,6 @@ div.col-centered {
     bottom: -15%;
 }
 
-/* Media Query */
-
-@media (max-width: 480px) {
-    #home img {
-        width: 100%;
-    }
-    #home>div.imgWrap {
-        width: 240px;
-    }
-    h1.bannerHeader {
-        font-size: 30px;
-    }
-}
 
 .copyrights p {
     margin: 0;
@@ -139,11 +131,7 @@ div.col-centered {
 
 .logo {
     display: inline-block;
-    font-size: 30px;
-    font-weight: bold;
-    background: -webkit-linear-gradient(#81d4d8, #054a47);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    width: 150px;
 }
 
 div#toTop {
@@ -431,7 +419,7 @@ a.instagram {
         -ms-user-select: none;
         user-select: none;
         cursor: pointer;
-        margin-top:10px;
+        margin-top: 17px;
     }
     .menuToggle span {
         display: block;
@@ -457,7 +445,7 @@ a.instagram {
         width: 100vh;
         background: rgba(36, 44, 54, 0.4);
         z-index: 1000;
-        top:0;
+        top: 0;
     }
     .openMenu .menuToggle span {
         opacity: 1;
@@ -497,16 +485,14 @@ a.instagram {
         opacity: 1;
     }
     .header .menu li a:hover {
-        color: #000;
+        color: #4e9b9c;
     }
-    
     .header .menu {
         display: block;
         top: 0;
         margin-top: 0;
         padding-top: 100px;
     }
-    
     .header .menu li {
         padding: 10px;
     }
@@ -530,5 +516,8 @@ a.instagram {
     }
     .customerBlock {
         width: 80%;
+    }
+    body {
+        overflow-x: hidden;
     }
 }

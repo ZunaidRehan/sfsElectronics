@@ -13,8 +13,11 @@
     <link href="css/mystyle.css" rel="stylesheet" media="screen">
     <link href="css/master.css" rel="stylesheet" media="screen">
     <link href="css/works.css" rel="stylesheet" media="screen">
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
         $(document).ready(function () {
 
@@ -46,10 +49,7 @@
             document.getElementById("myBar").style.width = scrolled + "%";
         }
     </script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </head>
 
 <body id="about">
@@ -59,10 +59,13 @@
             <div class="progress-bar" id="myBar"></div>
         </div>
         <div class="logoSection">
-            <div class="logo">SFS Electronics</div>
+            <!-- <div class="logo">SFS Electronics</div> -->
+            <a href="http://sfselectronics.com/">
+                <img class="logo" data-aos="zoom-in" src="./images/logo.png" alt="SFS Electronics">
+            </a>
         </div>
         <div class="mobile menuToggle"><span></span><span></span><span></span></div>
-        <div class="col col-sm-6 menu">
+        <div class="col col-sm-6 menu" data-aos="fade-down">
             <li><a href="index"> Home</a></li>
             <li><a href="works"> Our Works</a></li>
             <li><a href="about"> About Us</a></li>
@@ -75,17 +78,17 @@
             <h1 class="heading"><span>Who We Are ?</span></h1>
             <div class="col-sm-12 col-centered contentWrapper">
                 <div class="customerRow">
-                    <div class="customerBlock block1">
+                    <div class="customerBlock block1" data-aos="fade-right">
                         <p>SFS Electronics based in Delhi</p>
                     </div>
-                    <div class="customerBlock block2">
+                    <div class="customerBlock block2" data-aos="fade-down">
                         <p>It was founded by group of Quality Engineers in 2018.</p>
                     </div>
-                    <div class="customerBlock block3">
+                    <div class="customerBlock block3" data-aos="fade-up">
                         <p> At SFS Electronics We provide our esteemed customer with highest quality services
                         </p>
                     </div>
-                    <div class="customerBlock block4">
+                    <div class="customerBlock block4" data-aos="fade-left">
                         <p> We also try to provide on time Services by using innovative approach.</p>
                     </div>
                 </div>
@@ -95,33 +98,31 @@
             <h2 class="heading"><span>Our Team</span></h2>
             <div class="serviceRow">
                 <div class="profileBlock">
-                    <img src="./images/sameer.jpeg" class="profileImg" alt="Sameer Ahmed" />
-                    <h6>Sameer Ahmed</h6>
-                    <p>Hands on experience in the field of Hardware and Software testing of PCB board</p>
+                    <img src="./images/sameer.jpeg" class="profileImg" alt="Sameer Ahmed" data-aos="zoom-in"/>
+                    <h6 data-aos="fade-right">Sameer Ahmed</h6>
+                    <p data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000">Hands on experience in the field of Hardware and Software testing of PCB board</p>
                 </div>
                 <div class="profileBlock">
-                    <img src="./images/saif.png" class="profileImg" alt="Sameer Ahmed" />
-                    <h6>Saif Ali</h6>
-                    <p>Working experience in the field of Indian Broadcasting & Satellite industry</p>
+                    <img src="./images/saif.jpg" class="profileImg" alt="Saif Ali" data-aos="zoom-in" />
+                    <h6 data-aos="fade-up">Saif Ali</h6>
+                    <p data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000">Working experience in the field of Indian Broadcasting & Satellite industry</p>
                 </div>
                 <div class="profileBlock">
-                    <img src="./images/abuFaisal.jpg" class="profileImg" alt="Sameer Ahmed" />
-                    <h6>Abu Faisal</h6>
-                    <p>Extensive experience in the field of Industrial Electronics, Security system & Customer Handling</p>
+                    <img src="./images/abuFaisal.jpg" class="profileImg" alt="Abu Faisal" data-aos="zoom-in" />
+                    <h6 data-aos="fade-left">Abu Faisal</h6>
+                    <p data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000">Extensive experience in the field of Industrial Electronics, Security system & Customer Handling
+                    </p>
                 </div>
             </div>
         </div>
     </div>
-    <!-- <div class="aboutUs">
-        <div class="container ">
-            <h1 class="heading"><span>Who We Are ?</span></h1>
-            <p>SFS Electronics based in Delhi, was founded by group of Quality Engineers in 2018.</p>
-            <p>At SFS Electronics We provide our esteemed customer with highest quality services
-                on time by using innovative approach.
-            </p>
-            
-        </div>
-    </div> -->
+   
     <div class="footerWrapper">
         <div class="container footer">
             <div class="col-lg-5 col-xs-10 copyrights">
@@ -138,9 +139,13 @@
             </div>
         </div>
     </div>
-
+    <!-- ======================= Scripts ====================== -->
 
     <script type="text/javascript" src="./js/myJS.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

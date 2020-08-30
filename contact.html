@@ -13,8 +13,11 @@
     <link href="css/mystyle.css" rel="stylesheet" media="screen">
     <link href="css/master.css" rel="stylesheet" media="screen">
     <link href="css/works.css" rel="stylesheet" media="screen">
-    <script type="text/javascript" src="js/myJs.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
     <script>
         $(document).ready(function () {
@@ -47,10 +50,6 @@
             document.getElementById("myBar").style.width = scrolled + "%";
         }
     </script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
 <body id="contact">
@@ -60,10 +59,13 @@
             <div class="progress-bar" id="myBar"></div>
         </div>
         <div class="logoSection">
-            <div class="logo">SFS Electronics</div>
+            <!-- <div class="logo">SFS Electronics</div> -->
+            <a href="http://sfselectronics.com/">
+                <img class="logo" data-aos="zoom-in" src="./images/logo.png" alt="SFS Electronics">
+            </a>
         </div>
         <div class="mobile menuToggle"><span></span><span></span><span></span></div>
-        <div class="col col-sm-6 menu">
+        <div class="col col-sm-6 menu" data-aos="fade-down">
             <li><a href="index"> Home</a></li>
             <li><a href="works"> Our Works</a></li>
             <li><a href="about"> About Us</a></li>
@@ -75,15 +77,17 @@
         <div class="container">
             <h1 class="heading"><span>Contact Us</span></h1>
             <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.1013660353183!2d77.28465201440562!3d28.566718693808845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce475f835ed19%3A0x669562ee7f203e3d!2sShahab%20Masjid%20Rd%2C%20Jamia%2C%20Batla%20House%2C%20Jamia%20Nagar%2C%20Okhla%2C%20New%20Delhi%2C%20Delhi%20110025!5e0!3m2!1sen!2sin!4v1598547415143!5m2!1sen!2sin" width="600" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.272812057176!2d77.29137721440547!3d28.56156949404144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDMzJzQxLjYiTiA3N8KwMTcnMzYuOCJF!5e0!3m2!1sen!2sin!4v1598778057315!5m2!1sen!2sin"
+                    width="600" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
             </div>
             <div class="col-lg-6 col-md-8 col-xs-12 col-centered contentWrapper">
                 <div class="tehnologyRow">
-                    <div class="contactUsBlock block1">
+                    <div class="contactUsBlock block1" data-aos="fade-right">
                         <p><i class="fa fa-check"></i>Email: contactus@sfselectronics.com</p>
                     </div>
-                    <div class="contactUsBlock block2">
+                    <div class="contactUsBlock block2" data-aos="fade-left">
                         <p><i class="fa fa-check"></i>Mobile No: +919311471470</p>
                     </div>
                 </div>
@@ -108,7 +112,13 @@
     </div>
 
 
+    <!-- ======================= Scripts ====================== -->
+
     <script type="text/javascript" src="./js/myJS.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

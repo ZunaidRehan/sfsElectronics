@@ -3,6 +3,9 @@ body#about .aboutUs,
 body#contact .contactUs {
     margin-top: 100px;
 }
+body{
+    overflow-x: hidden;
+}
 
 body#works .header,
 body#about .header,
@@ -20,7 +23,7 @@ body#about .aboutUs {
     background: #fff;
 }
 .ourTeam {
-    margin-top: 90px;
+    margin-top: 110px;
 }
 .map iframe {
     width: 100%;
