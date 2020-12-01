@@ -7,7 +7,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="One of the Best Electronics Repairs in India">
-    <meta name="keywords" content="SFS Electronics, Electronics Repairs, Electronics Problem Solver" />
+    <meta name="keywords"
+        content="SFS Electronics, Electronics Repairs, Electronics Problem Solver ,PCB Repairing Service, SMPS Repairing Services, PLC Repair Services, Off Set Machine Repair Service, Printing Board Repair Service, HMI Repair Service, Pcb Mount Terminal Block, SFS  Electronics, Delhi" />
     <link rel="canonical" href="http://www.sfselectronics.com/" />
     <link href="css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="css/mystyle.css" rel="stylesheet" media="screen">
@@ -76,7 +77,7 @@
     <div class="ourServices clearfix">
         <div class="container">
             <h1 class="heading"><span>What We Do ?</span></h1>
-            <div class="col-sm-12 col-centered contentWrapper">
+            <!-- <div class="col-sm-12 col-centered contentWrapper">
                 <div class="serviceRow">
                     <div class="circleBlock block1" data-aos="fade-right">
                         <p>Repairing of All AC/DC Power Supplies<br>
@@ -101,21 +102,31 @@
                         <p>Repairing of PLC & PLC Panel and HMI</p>
                     </div>
                 </div>
+            </div> -->
+            <div class="tab">
+                <button class="tablinks active" onclick="openService(event, 'pcbDesign')">Design</button>
+                <button class="tablinks" onclick="openService(event, 'securitySolution')">Security</button>
+                <button class="tablinks" onclick="openService(event, 'repairingService')">Repairing</button>
             </div>
-        </div>
-    </div>
-    <div class="ourServicesWrap clearfix">
-        <div class="container">
-            <h1 class="heading"><span> Our Services</span></h1>
-            <div class="col-sm-12 col-centered contentWrapper">
-                <div class="col-md-3 col-xs-12 servicesWrapper " data-aos="fade-right">
+
+            <!-- Tab content -->
+            <div id="pcbDesign" class="tabcontent active">
+                <h5>
+                    PCB Designing, Layout and Printing
+                </h5>
+                <p>
+                    We deal in PCB design single and double side of all electronics equipments.
+                    we also provide very cost effective PCB printing and mounting to our clients
+                </p>
+
+                <div class="col-md-6 col-xs-12 servicesWrapper ">
                     <h5>PCB Mounting</h5>
                     <img class="serivceImages" src="./images/pcbMounting.jpg" alt="PCB mounting">
                     <p>We at SFS Electronics provide high quality PCB mounting/PCB assembly of SMD and through hole
                         component.
                     </p>
                 </div>
-                <div class="col-md-3 col-xs-12 servicesWrapper " data-aos="fade-down">
+                <div class="col-md-6 col-xs-12 servicesWrapper ">
                     <h5>PCB Design</h5>
                     <img class="serivceImages" src="./images/pcbDesign.jpg" alt="PCB Design">
                     <p>We are engaged in offering a qualitative PCB Design Service. to our valuable clients. We offer
@@ -127,7 +138,39 @@
 
                     </p>
                 </div>
-                <div class="col-md-3 col-xs-12 servicesWrapper " data-aos="fade-left">
+            </div>
+
+            <div id="securitySolution" class="tabcontent">
+                <h5>
+                    Security Solution
+                </h5>
+                <p>
+                    We give security solution with automation to our clients. we deal in installation
+                    service and AMC of DVR, NNR, IP and analog cameras at residential as well as
+                    commercial sites.
+                    we also deal in fire alarm and others security equipments.
+
+                </p>
+
+                <div class="col-md-6 col-xs-12 servicesWrapper">
+                    <h5>CCTV Camera Installation Service</h5>
+                    <img class="serivceImages" src="./images/cctv.jpg" alt="CCTV">
+                    <p>We at SFS Electronics give complete security solutions to our customer/client. We provide
+                        complete CCTV installation and service at residential as well as commercial sites.
+                    </p>
+                </div>
+            </div>
+
+            <div id="repairingService" class="tabcontent">
+                <h5>
+                    Repairing Services
+                </h5>
+                <p>
+                    We deal in repairing of variety of power supply SMPS, VFD, PLCs, Medical equipments
+                    and all types of industrial PCBs.
+                </p>
+
+                <div class="col-md-6 col-xs-12 servicesWrapper " data-aos="fade-left">
                     <h5>VFD</h5>
                     <img class="serivceImages" src="./images/vfdRepair.jpg" alt="VFD Repair">
                     <p>We offer our precious clients the premium quality VFD Repair Service. Offered service is widely
@@ -139,31 +182,9 @@
 
                     </p>
                 </div>
-                <div class="col-md-3 col-xs-12 servicesWrapper " data-aos="fade-right">
-                    <h5> Printing Board</h5>
-                    <img class="serivceImages" src="./images/printingBoard.jpeg" alt=" Printing Board Repair">
-                    <p>Backed by rich industry experiences, we are highly engaged in offering an optimum quality
-                        Printing Board Repair Service. Our offered services have gained wide appreciation from our
-                        precious clients for their varied associated attributes like promptness, flawlessness and
-                        perfect execution. Services, offered by us are performed using the best grade tools and modern
-                        technology. Our experts examine all the parameters associated to these services and execute them
-                        in an excellent manner. Furthermore, provided services can be availed by our valuable clients at
-                        most competitive prices.
 
-                    </p>
-                </div>
-                <div class="col-md-3 col-xs-12 servicesWrapper " data-aos="fade-up">
-                    <h5>HMI</h5>
-                    <img class="serivceImages" src="./images/hmiRepair.jpg" alt="HMI Repair">
-                    <p>We are the leading organization to offer our precious clients an optimum quality HMI Repair
-                        Service. This service is carried out under the strict supervision of our experts using the best
-                        grade tools and advanced techniques. Our skilled professionals ensure the clients that the
-                        service, provided by us is highly reliable and executed in an excellent manner. The offered
-                        service is performed within a stipulated time-frame. Furthermore, this service can be availed by
-                        our precious clients at budget-friendly prices.
-                    </p>
-                </div>
-                <div class="col-md-3 col-xs-12 servicesWrapper " data-aos="fade-left">
+
+                <div class="col-md-6 col-xs-12 servicesWrapper ">
                     <h5>SMPS Power Supply</h5>
                     <img class="serivceImages" src="./images/smpsPowerSupply.jpg" alt="SMPS Power Supply">
                     <p>Being one of the best organizations, we are offering SMPS Power Supply Repairing Services. This
@@ -174,7 +195,7 @@
                         cost-effectiveness and promptness features.
                     </p>
                 </div>
-                <div class="col-md-3 col-xs-12 servicesWrapper " data-aos="fade-right">
+                <div class="col-md-6 col-xs-12 servicesWrapper ">
                     <h5>PLC</h5>
                     <img class="serivceImages" src="./images/plcRepair.jpg" alt="PLC Repair">
                     <p>With the continuous support and sincere efforts put by our experienced professionals, we have
@@ -184,7 +205,7 @@
                         Further, the provided service can be availed by our valuable clients at most competitive price.
                     </p>
                 </div>
-                <div class="col-md-3 col-xs-12 servicesWrapper " data-aos="fade-down">
+                <div class="col-md-6 col-xs-12 servicesWrapper ">
                     <h5>Medical PCB</h5>
                     <img class="serivceImages" src="./images/medicalPcbRepair.jpg" alt="Medical PCB Repair">
                     <p>We are the leading organization in the industry to provide our clients the best quality Medical
@@ -195,18 +216,8 @@
                         clients at most reasonable price.
                     </p>
                 </div>
-                <div class="col-md-3 col-xs-12 servicesWrapper " data-aos="fade-left">
-                    <h5>Off Set Machine</h5>
-                    <img class="serivceImages" src="./images/vfdRepair.jpg" alt="VFD Repair">
-                    <p>Our valuable clients can avail from us premium quality Off Set Machine Repair Service. This
-                        service is performed as per the requirements of our precious clients. The provided service is
-                        highly appreciated by our clients owing to its hassle free execution and cost-effectiveness
-                        features. This service is carried out by our highly qualified professionals using excellent
-                        grade tools and modern technology. The offered service is executed within a scheduled
-                        time-frame. Further, clients can avail this service from us at nominal price.
-                    </p>
-                </div>
-                <div class="col-md-3 col-xs-12 servicesWrapper " data-aos="fade-right">
+
+                <div class="col-md-6 col-xs-12 servicesWrapper ">
                     <h5> Motherboard PCB</h5>
                     <img class="serivceImages" src="./images/motherboardPcb.jpg" alt=" Motherboard PCB">
                     <p>To cater the variegated demands of our precious clients, we are highly engrossed in providing a
@@ -216,28 +227,6 @@
                         technology. Moreover, the offered service is highly reliable and carried out in compliance with
                         the set quality standards.
 
-                    </p>
-                </div>
-                <div class="col-md-3 col-xs-12 servicesWrapper " data-aos="fade-up">
-                    <h5>PCB</h5>
-                    <img class="serivceImages" src="./images/pcbRepair.jpg" alt="PCB">
-                    <p>We are a unique entity in the industry, actively committed towards offering an optimum quality
-                        PCB Repair Service. This service is widely acknowledged by our precious clients owing to its
-                        promptness and cost-effectiveness features. Our skilled professionals provide this service in
-                        the best possible manner. The provided service is executed by our adept professionals using
-                        optimum quality tools and latest technology. Moreover, our precious clients can avail this
-                        service from us at most reasonable price.
-                    </p>
-                </div>
-                <div class="col-md-3 col-xs-12 servicesWrapper " data-aos="fade-left">
-                    <h5>Lift & Elevator</h5>
-                    <img class="serivceImages" src="./images/liftAndElevator.png" alt="Lift & Elevator">
-                    <p>We are a unique name in the industry to provide our precious clients the best quality Lift And
-                        Elevator PCB Repairing Service. The provided service is carried out by our skilled team of
-                        professionals in the best possible manner. While performing this service, our experts ensure
-                        that the offered service delivers precision results and is within the budget to attain maximum
-                        clients’ satisfaction. Moreover, this service is widely acknowledged by our valuable clients for
-                        its flawlessness and hassle free execution.
                     </p>
                 </div>
             </div>
@@ -251,7 +240,7 @@
             <div class="col-md-7 rightSection">
                 <div class="socialShares">
                     <a href="#" class="facebook"><i class="fa fa-facebook "> </i></a>
-                    <a href="#" class="instagram"><i class="fa fa-instagram "></i></a>
+                    <a href="https://www.instagram.com/sfselectronics/" target="blank" class="instagram"><i class="fa fa-instagram "></i></a>
                     <a href="#" class="twitter"><i class="fa fa-twitter "></i></a></div>
             </div>
             <div id="toTop">
@@ -266,6 +255,28 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        function openService(evt, serviceName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(serviceName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
     </script>
 </body>
 
