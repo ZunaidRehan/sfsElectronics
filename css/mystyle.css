@@ -17,7 +17,16 @@ div#slider img {
     display: flex;
     width: auto;
 }
+a.carousel-control-next, 
+a.carousel-control-prev {
+    width: 10%;
+    font-size: 30px;
+}
 
+a.carousel-control-next i.fa.fa-arrow-right{
+    margin: 0;
+    font-size: inherit !important;
+}
 /* ================================ Scroll Progress Bar ================================ */
 
 .progress-container {
@@ -40,11 +49,11 @@ div#slider img {
 .header {
     padding-top: 5px;
     padding-bottom: 5px;
-    position: absolute;
+    position: relative;
     left: 0;
     right: 0;
     z-index: 10000;
-        background: rgb(204 204 204 / 0.9);
+    background: #fff;
         
 }
 
@@ -85,7 +94,7 @@ div.col-centered {
 }
 
 .header .menu li a:hover {
-    color: #fff;
+    color: #09539f;
     text-decoration: none;
 }
 
@@ -139,7 +148,7 @@ div#toTop {
     right: 20px;
     bottom: 20px;
     z-index: 1000;
-    background: #428e8f;
+    background: #007bff;
     padding: 10px;
     border-radius: 50%;
     color: #fff;
@@ -289,6 +298,9 @@ div#toTop {
     transition: transform 0.5s;
     transition: transform 0.5s, -webkit-transform 0.5s;
 } */
+.padding-remove{
+padding: 0 !important;
+}
 
 .serviceContent {
     text-align: center;
@@ -307,6 +319,45 @@ div#toTop {
 }
 
 /* ============================= Contact Us ======================= */
+div.contactUsWrap {
+    position: fixed;
+    top: 57%;
+    z-index: 11;
+    right: -750px;
+    transition: all 1s ease-in-out;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 18px #888888;
+}
+.contactUsHeader{
+    position: fixed;
+    transform: rotate(90deg);
+    right:-55px;
+    padding:10px;
+    top: 70%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 10px 18px #888888;
+    cursor: pointer;
+}
+/* .contactUsWrap:hover .contactUsHeader {
+    right: 388px;
+}
+.technologyRow {
+    right: -1000px;
+    position: fixed;
+    transition: all 1.1s ease-in-out;
+    background: #fff;
+}
+
+.contactUsWrap:hover .technologyRow {
+    right: 50px;
+} */
+
+div.contactUsWrap:hover {
+    right: 0px;
+}
 
 .contactUsBlock p>i {
     margin-right: 20px;
@@ -491,7 +542,7 @@ a.instagram {
         opacity: 1;
     }
     .header .menu li a:hover {
-        color: #4e9b9c;
+        color: #09539f;
     }
     .header .menu {
         display: block;
@@ -525,5 +576,8 @@ a.instagram {
     }
     body {
         overflow-x: hidden;
+    }
+    button.tablinks {
+        font-size: 16px !important;
     }
 }

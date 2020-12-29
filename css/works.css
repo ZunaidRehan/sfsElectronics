@@ -1,8 +1,8 @@
-body#works .ourServices,
+/* body#works .ourServices,
 body#about .aboutUs,
 body#contact .contactUs {
     margin-top: 100px;
-}
+} */
 body{
     overflow-x: hidden;
 }
@@ -12,9 +12,10 @@ body#about .header,
 body#contact .header {
     top: 0;
 }
-body#works .ourServices {
-    margin-top: 100px;
+.aboutUs p > i {
+    margin-right: 10px;
 }
+
 #works .serviceRow {
     margin:30px 0;
 }
@@ -22,7 +23,7 @@ body#about .aboutUs {
     background: #fff;
 }
 .ourTeam {
-    margin-top: 110px;
+    margin-top: 70px;
 }
 .map iframe {
     width: 100%;
@@ -60,7 +61,7 @@ img.profileImg {
 img.serivceImages {
     width: 250px;
     height: 250px;
-    margin: 0 auto;
+    margin: 10px auto;
     display: flex;
 }
 
@@ -103,6 +104,8 @@ img.serivceImages {
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
+    display: flex;
+    justify-content: space-around;
   }
   
   /* Style the buttons that are used to open the tab content */
@@ -124,19 +127,36 @@ img.serivceImages {
   
   /* Create an active/current tablink class */
   .tab button.active {
-    background-color: #ccc;
+    background-color: #0d3c70;
+    color: #fff;
   }
+  
   
   /* Style the tab content */
   .tabcontent {
     display: none;
-    padding: 6px 12px;
+    padding: 25px;
     border: 1px solid #ccc;
     border-top: none;
+    width:100%;
+    text-align: center;
   }
   .tabcontent.active {
     display: block;
   }
+  button.tablinks {
+    width: 33%;
+    border: 1px solid #ccc;
+    font-size: 25px;
+    font-weight: bold;
+}
+.servicesWrap {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px 0px;
+}
+
 
 @media(max-width:992px){
     .profileBlock {
