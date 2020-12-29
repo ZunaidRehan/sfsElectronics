@@ -169,3 +169,9 @@ img.serivceImages {
         max-width: 100% !important;
     }
 }
+@media(max-width:480px){
+    img.serivceImages {
+        width: 160px;
+        height: 150px;
+    }
+}
