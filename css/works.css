@@ -60,7 +60,6 @@ img.profileImg {
 }
 img.serivceImages {
     width: 250px;
-    height: 250px;
     margin: 10px auto;
     display: flex;
 }
@@ -156,7 +155,30 @@ img.serivceImages {
     padding: 25px;
     margin: 15px 0px;
 }
+.securityServices{
+    text-align: left;
+}
+.securityServices h5 {
+    color: #2d2dd8;
+    letter-spacing: 1px;
+    text-align: left;
+}
 
+.securityServices h5 span {
+    color: #1387b1;
+}
+
+.securityServices h5:after {
+    content: "";
+    background-image: linear-gradient(to right, red , #fdfdf7);
+    height: 10px;
+    display: block;
+    margin-top: 10px;
+}
+
+.securityServices img.serivceImages {
+    margin: 25px auto;
+}
 
 @media(max-width:992px){
     .profileBlock {
@@ -167,5 +189,22 @@ img.serivceImages {
 
     .servicesWrapper {
         max-width: 100% !important;
+    }
+    .securityServices .col-xs-4 {
+        display: none;
+    }
+    
+    .securityServices  .col-xs-8 {
+        width: 100%;
+    }
+    
+    .securityServices h5 {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:480px){
+    img.serivceImages {
+        width: 160px;
     }
 }
