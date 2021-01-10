@@ -104,7 +104,6 @@ img.serivceImages {
     border: 1px solid #ccc;
     background-color: #f1f1f1;
     display: flex;
-    justify-content: space-around;
   }
   
   /* Style the buttons that are used to open the tab content */
@@ -114,7 +113,6 @@ img.serivceImages {
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
     transition: 0.3s;
     outline: 0 !important;
   }
@@ -126,31 +124,37 @@ img.serivceImages {
   
   /* Create an active/current tablink class */
   .tab button.active {
-    background-color: #0d3c70;
-    color: #fff;
+    color: #130fff;
+    font-weight: bold;
   }
   
   
   /* Style the tab content */
-  .tabcontent {
+  .tabcontent,
+  .securityTabContent {
     display: none;
     padding: 25px;
     border: 1px solid #ccc;
     border-top: none;
     width:100%;
-    text-align: center;
+    /* text-align: center; */
   }
-  .tabcontent.active {
+  .securityTabContent{
+      border: none;
+  }
+  .tabcontent.active,
+  .securityTabContent.active {
     display: block;
   }
-  button.tablinks {
-    width: 33%;
-    border: 1px solid #ccc;
-    font-size: 25px;
-    font-weight: bold;
+  #securitySolution .tab {
+    display: inline-block;
+}
+
+  .tab button {
+    padding: 3px;
+    margin: 0 20px;
 }
 .servicesWrap {
-    border: 1px solid #ccc;
     border-radius: 10px;
     padding: 25px;
     margin: 15px 0px;
@@ -159,22 +163,46 @@ img.serivceImages {
     text-align: left;
 }
 .securityServices h5 {
-    color: #2d2dd8;
+    color: #000;
     letter-spacing: 1px;
     text-align: left;
+    display: inline-block;
 }
-
+/* 
 .securityServices h5 span {
     color: #1387b1;
-}
+} */
 
-.securityServices h5:after {
+.securityServices h5:after,
+.securityServices h6:after,
+.tabcontent > h5:after,
+h5:after  {
     content: "";
-    background-image: linear-gradient(to right, red , #fdfdf7);
-    height: 10px;
+    background-image: linear-gradient(to right, #0400ff , #fdfdf7);
+    height: 3px;
     display: block;
     margin-top: 10px;
 }
+.tabcontent > h5,
+h5{
+    display: inline-block;
+}
+.securityServices h6{
+    display:inline-block;
+
+}
+.securitySolution > h5 {
+    text-align: left;
+}
+
+.tabcontentx > h5 {
+    text-align: left;
+    font-size: 25px;
+    display: inline-block;
+}
+
+
+
 
 .securityServices img.serivceImages {
     margin: 25px auto;
