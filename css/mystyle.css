@@ -460,6 +460,12 @@ a.instagram {
     .copyrights p {
         text-align: center;
     }
+    .aboutNProductSection .aboutUsSection,
+.aboutNProductSection .ourServiceSec {
+    width: 100%;
+    flex: none;
+    max-width: 100%;
+}
 }
 
 @media(max-width:767px) {
