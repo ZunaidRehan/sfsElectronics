@@ -219,11 +219,24 @@ h5{
         max-width: 100% !important;
     }
     .securityServices .col-xs-4 {
-        display: none;
+        display: block;
+    width: 100%;
+    padding: 0;
+    }
+    .securityServices .col-xs-4 img {
+        margin: 0;
+        margin-bottom: 20px;
     }
     
     .securityServices  .col-xs-8 {
         width: 100%;
+        padding: 0;
+    }
+    .securityServices {
+        padding: 0 5px;
+    }
+    .servicesWrap {
+        padding: 0;
     }
     
     .securityServices h5 {
